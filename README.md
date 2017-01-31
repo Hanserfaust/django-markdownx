@@ -103,15 +103,6 @@ class MyModel(models.Model):
     myfield = MarkdownxField()
 ```
 
-...and then, include a form's required media in the template using `{{ form.media }}`:
-
-```html
-<form method="POST" action="">{% csrf_token %}
-    {{ form }}
-</form>
-{{ form.media }}
-```
-
 ## Form
 
 ```python
